@@ -16,17 +16,15 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" href="./style.css">
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <div class="wrapper">
     <!-- Comment #1 -->
   <div class="post">
     <div class="like-container">
-      12
+      <button class="plus-btn"><img src="./images/icon-plus.svg" alt=""></button>
+      <p>12</p>
+      <button class="minus-btn"><img src="./images/icon-minus.svg" alt=""></button>
     </div>
     <div class="post-wrapper">
       <div class="post-header">
@@ -44,7 +42,9 @@
   <!-- Comment #2 -->
   <div class="post">
     <div class="like-container">
-      5
+      <button class="plus-btn"><img src="./images/icon-plus.svg" alt=""></button>
+      <p>5</p>
+      <button class="minus-btn"><img src="./images/icon-minus.svg" alt=""></button>
     </div>
     <div class="post-wrapper">
       <div class="post-header">
@@ -62,17 +62,19 @@
   <div class="comment-container">
     <div class="comment">
       <div class="like-container">
-        4
+        <button class="plus-btn"><img src="./images/icon-plus.svg" alt=""></button>
+        <p>4</p>
+        <button class="minus-btn"><img src="./images/icon-minus.svg" alt=""></button>
       </div>
       
       <div class="post-wrapper">
-        <img src="./images/avatars/image-ramsesmiron.png" alt="profile" class="avatar" />
         <div class="post-header">
+          <img src="./images/avatars/image-ramsesmiron.png" alt="profile" class="avatar" />
           <p class="user">ramsesmiron</p>
           <p class="date">1 week ago</p>
         </div>
         <div class="comment-text">
-          @maxblagun If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.
+          <a href="#">@maxblagun</a> If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.
         </div>
       </div>
     </div>
@@ -80,7 +82,9 @@
     <div class="comment">
       <!-- Comment #4 (Reply to comment #2) -->
       <div class="like-container">
-        2
+        <button class="plus-btn"><img src="./images/icon-plus.svg" alt=""></button>
+        <p>2</p>
+        <button class="minus-btn"><img src="./images/icon-minus.svg" alt=""></button>
       </div>
 
       <div class="post-wrapper">
@@ -90,18 +94,24 @@
           <p class="date">2 days ago</p>
         </div> 
         <div class="comment-text">
-          @ramsesmiron I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.
+          <a href="#">@ramsesmiron</a> I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.
         </div>
         </div>
       </div>
   </div>
   
+  <div class="input-container">
+    <img src="./images/avatars/image-juliusomo.png" alt="profile" class="avatar" />
+    <textarea name="comment" id="comment-input" cols="30" rows="10"></textarea>
+    <button id="send-btn">SEND</button>
+  </div>
+  </div>
+
   <footer>
     <div class="attribution">
       Challenge adapted from <a href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Thomas Vargas</a>.
     </div>
   </footer>
-  </div>
 </body>
 </html>
