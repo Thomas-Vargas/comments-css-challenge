@@ -28,9 +28,12 @@
     </div>
     <div class="post-wrapper">
       <div class="post-header">
-        <img src="./images/avatars/image-amyrobson.png" alt="profile" class="avatar"/>
-        <p class="user">amyrobson </p>
-        <p class="date">1 month ago</p>
+        <div class="user-details">
+          <img src="./images/avatars/image-amyrobson.png" alt="profile" class="avatar"/>
+          <p class="user">amyrobson </p>
+          <p class="date">1 month ago</p>
+        </div>
+        <button class="reply-btn"><img src="./images/icon-reply.svg" alt=""> Reply</button>
       </div>
   
       <div class="post-text">
@@ -48,9 +51,12 @@
     </div>
     <div class="post-wrapper">
       <div class="post-header">
-        <img src="./images/avatars/image-maxblagun.png" alt="profile" class="avatar"/>
-        <p class="user">maxblagun</p>
-        <p class="date">2 weeks ago</p>
+        <div class="user-details">
+          <img src="./images/avatars/image-maxblagun.png" alt="profile" class="avatar"/>
+          <p class="user">maxblagun</p>
+          <p class="date">2 weeks ago</p>
+        </div>
+        <button class="reply-btn"><img src="./images/icon-reply.svg" alt=""> Reply</button>
       </div>
       <div class="post-text">
         Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
@@ -69,10 +75,14 @@
       
       <div class="post-wrapper">
         <div class="post-header">
-          <img src="./images/avatars/image-ramsesmiron.png" alt="profile" class="avatar" />
-          <p class="user">ramsesmiron</p>
-          <p class="date">1 week ago</p>
+          <div class="user-details">
+            <img src="./images/avatars/image-ramsesmiron.png" alt="profile" class="avatar" />
+            <p class="user">ramsesmiron</p>
+            <p class="date">1 week ago</p>
+          </div>
+          <button class="reply-btn"><img src="./images/icon-reply.svg" alt=""> Reply</button>
         </div>
+        
         <div class="comment-text">
           <a href="#">@maxblagun</a> If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.
         </div>
@@ -89,9 +99,16 @@
 
       <div class="post-wrapper">
         <div class="post-header">
-          <img src="./images/avatars/image-juliusomo.png" alt="profile" class="avatar" />
-          <p class="user">juliusomo</p>
-          <p class="date">2 days ago</p>
+          <div class="user-details">
+            <img src="./images/avatars/image-juliusomo.png" alt="profile" class="avatar" />
+            <p class="user">juliusomo</p>
+            <p class="date">2 days ago</p>
+          </div>
+
+          <div class="user-btn-group">
+            <button class="delete"><img src="./images/icon-delete.svg" alt="Delete button"> Delete</button>
+            <button class="edit"><img src="./images/icon-edit.svg" alt="Edit button"> Edit</button>
+          </div>
         </div> 
         <div class="comment-text">
           <a href="#">@ramsesmiron</a> I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.
