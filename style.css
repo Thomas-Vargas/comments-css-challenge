@@ -62,10 +62,6 @@ button:hover {
     border: none;
 }
 
-.plus-btn img:hover, .minus-btn img:hover {
-    background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
-}
-
 .like-container p {
     color: var(--moderate-blue);
     margin: 15px 0px 10px 0px;
@@ -302,10 +298,10 @@ footer a:hover {
     }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Extra large devices (large laptops and desktops, 1400px and up) */
 @media only screen and (min-width: 1400px) {
     .wrapper {
-        margin: 80px 600px;
+        margin: 80px 400px;
     }
 }
 
