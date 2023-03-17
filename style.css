@@ -138,6 +138,19 @@ button:hover {
     color: var(--grayish-blue);
 }
 
+.comment-text a {
+    text-decoration: none;
+    color: var(--moderate-blue);
+}
+
+.comment-text a:hover {
+    color: var(--dark-blue)
+}
+
+.comment-text a:target {
+    text-decoration: none;
+}
+
 .input-container {
     display: flex;
     background-color: var(--white);
