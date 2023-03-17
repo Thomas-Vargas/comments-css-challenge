@@ -4,7 +4,7 @@
     --light-grayish-blue: hsl(239, 57%, 85%);
     --pale-red: hsl(357, 100%, 86%);
     --dark-blue: hsl(212, 24%, 26%);
-    --grrayish-blue: hsl(211, 10%, 45%);
+    --grayish-blue: hsl(211, 10%, 45%);
     --light-gray: hsl(223, 19%, 93%);
     --very-light-gray: hsl(228, 33%, 97%);
     --white: hsl(0, 0%, 100%);
@@ -25,6 +25,7 @@ body {
 }
 
 .post {
+    display: flex;
     background-color: var(--white);
     margin-bottom: 40px;
     padding: 20px;
@@ -32,10 +33,38 @@ body {
 }
 
 .comment {
+    display: flex;
     background-color: var(--white);
     margin-bottom: 40px;
     padding: 20px;
     border-radius: 10px;
+}
+
+.like-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: var(--light-gray);
+}
+
+.post-header {
+    display: flex;
+    gap: 20px
+}
+
+.post-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.avatar {
+    height: 35px;
+    width: 35px;
 }
 
 
