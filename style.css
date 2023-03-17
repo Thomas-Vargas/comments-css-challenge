@@ -66,7 +66,6 @@ button:hover {
     background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
 }
 
-
 .like-container p {
     color: var(--moderate-blue);
     margin: 15px 0px 10px 0px;
@@ -82,6 +81,16 @@ button:hover {
     gap: 20px;
     align-items: center;
     margin-bottom: 10px;
+}
+
+.you {
+    text-align: center;
+    width: 30px;
+    background-color: var(--moderate-blue);
+    color: white;
+    padding: 2px;
+    border-radius: 4px;
+    font-size: 14px;
 }
 
 .post-wrapper {
@@ -110,6 +119,15 @@ button:hover {
     color: var(--dark-blue);
     font-weight: bold;
     font-size: 15px;
+}
+
+.user a {
+    text-decoration: none;
+    color: var(--dark-blue);
+}
+
+.user a:hover {
+    color: var(--grayish-blue);
 }
 
 .post-text {
@@ -157,6 +175,10 @@ button:hover {
     color: var(--moderate-blue);
     background-color: var(--white);
     border: 2px solid var(--moderate-blue);
+}
+
+#send-btn:active {
+    transform: scale(1.1);
 }
 
 a:hover {
@@ -208,6 +230,10 @@ footer a:hover {
     color: hsl(358, 56%, 50%);
 }
 
+.delete:active {
+    color: var(--pale-red);
+}
+
 .edit {
     color: var(--moderate-blue);
     font-size: 15px;
@@ -215,5 +241,65 @@ footer a:hover {
 }
 
 .edit:hover, .reply-btn:hover {
-    color: var(--dark-blue)
+    color: var(--dark-blue);
 }
+
+.edit:active {
+    color:  hsl(238, 75%, 70%);
+}
+
+.reply-btn:active {
+    color:  hsl(238, 75%, 70%);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 12px;
+    }    
+
+    .wrapper {
+        margin: 80px 20px;
+    }
+
+    .comment-container {
+        margin: 0px;
+        padding-left: 20px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .wrapper {
+        margin: 80px 50px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .wrapper {
+        margin: 80px 100px;
+    }
+}
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1024) {
+    .wrapper {
+        margin: 80px 300px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1400px) {
+    .wrapper {
+        margin: 80px 600px;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .wrapper {
+        margin: 80px 600px;
+    }
+}
+
+
